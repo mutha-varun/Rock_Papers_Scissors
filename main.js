@@ -43,7 +43,7 @@ function User_Move(Move) {
     }
 
     document.querySelector(".js-result").innerHTML = result;
-    document.querySelector(".js-move").innerHTML = `You <img src="images/${Move}-emoji.png" class="move-emoji"><img src="images/${mov}-emoji.png" class="move-emoji"> Computer`;
+    document.querySelector(".js-move").innerHTML = `You <img src="images/${Move.toLowerCase()}-emoji.png" class="move-emoji"><img src="images/${mov.toLowerCase()}-emoji.png" class="move-emoji"> Computer`;
 
     if (result === `You win`){
         score.Wins++;
